@@ -1,0 +1,187 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+body {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    min-height: 100vh;
+}
+h1 {
+    text-align: center;
+    color: #333333;
+}
+.btn {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    margin: 10px 0 0;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-back {
+    padding: 10px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------Users---------------------*/
+.users-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.user-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(50% - 10px);
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.user-card h2 {
+    font-size: 20px;
+    color: #333333;
+    margin: 10px 0 5px;
+}
+
+/*--------User Details, Post Details----------------*/
+.user-details,
+.post-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.user-detail,
+.post-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.user-detail strong,
+.post-detail strong {
+    color: #333333;
+    font-weight: bold;
+}
+
+.post-detail div {
+    width: 400px;
+}
+
+.user-detail span,
+.user-detail p,
+.post-detail span,
+.post-detail p {
+    color: #555555;
+}
+
+.button-post {
+    width: 100%;
+}
+
+.post-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.post-list-title,
+.comment-list-title {
+    text-align: center;
+}
+
+.post-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    width: calc(20% - 20px); /* 20% ширини для 5 постів в ряд */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-card h2 {
+    font-size: 16px;
+    color: #333333;
+    margin: 0 0 10px;
+}
+
+.post-container-close {
+    display: none;
+}
+
+/*----------Comments-------------*/
+.comment-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.comment-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.comment-card div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-card h3 {
+    font-size: 16px;
+    color: #333333;
+    margin: 0 0 5px;
+}
+
+.comment-card p {
+    color: #555555;
+    font-size: 14px;
+    margin: 5px 0;
+}
